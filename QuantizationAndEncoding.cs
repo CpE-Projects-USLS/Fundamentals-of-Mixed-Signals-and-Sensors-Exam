@@ -66,11 +66,10 @@ namespace MSS_EXAM
                 ListViewItem this_tableitem = new ListViewItem(this_item.level.ToString());
                 this_tableitem.SubItems.Add(this_item.binary);
                 this_tableitem.SubItems.Add(this_item.voltage.ToString());
-
-                // Insert to Table
                 out_Table.Items.Add(this_tableitem);
             }
 
+            // Quantized
             out_QuantizedValue.Text = closestItem.voltage.ToString();
             out_DigitalValue.Text = closestItem.binary;
         }
