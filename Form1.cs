@@ -28,5 +28,11 @@ namespace MSS_EXAM
             BinaryWeightedDAC form = new BinaryWeightedDAC();
             form.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            R2RLadderDAC form = new R2RLadderDAC();
+            form.Show();
+        }
     }
 }

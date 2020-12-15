@@ -81,6 +81,12 @@
     <Compile Include="QuantizationAndEncoding.Designer.cs">
       <DependentUpon>QuantizationAndEncoding.cs</DependentUpon>
     </Compile>
+    <Compile Include="R2RLadderDAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R2RLadderDAC.Designer.cs">
+      <DependentUpon>R2RLadderDAC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BinaryWeightedDAC.resx">
       <DependentUpon>BinaryWeightedDAC.cs</DependentUpon>
     </EmbeddedResource>
@@ -98,6 +104,9 @@
     </Compile>
     <EmbeddedResource Include="QuantizationAndEncoding.resx">
       <DependentUpon>QuantizationAndEncoding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R2RLadderDAC.resx">
+      <DependentUpon>R2RLadderDAC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
