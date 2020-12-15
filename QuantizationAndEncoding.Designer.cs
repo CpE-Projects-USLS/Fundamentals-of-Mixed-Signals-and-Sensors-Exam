@@ -332,7 +332,7 @@ namespace MSS_EXAM
             this.out_Table.HideSelection = false;
             this.out_Table.Location = new System.Drawing.Point(9, 73);
             this.out_Table.Name = "out_Table";
-            this.out_Table.Size = new System.Drawing.Size(339, 222);
+            this.out_Table.Size = new System.Drawing.Size(339, 228);
             this.out_Table.TabIndex = 0;
             this.out_Table.UseCompatibleStateImageBehavior = false;
             this.out_Table.View = System.Windows.Forms.View.Details;

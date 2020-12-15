@@ -34,5 +34,11 @@ namespace MSS_EXAM
             R2RLadderDAC form = new R2RLadderDAC();
             form.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            SARDAC form = new SARDAC();
+            form.Show();
+        }
     }
 }

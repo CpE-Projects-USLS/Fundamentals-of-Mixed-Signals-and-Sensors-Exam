@@ -242,7 +242,7 @@ namespace MSS_EXAM
             this.out_Table.HideSelection = false;
             this.out_Table.Location = new System.Drawing.Point(6, 25);
             this.out_Table.Name = "out_Table";
-            this.out_Table.Size = new System.Drawing.Size(339, 283);
+            this.out_Table.Size = new System.Drawing.Size(339, 286);
             this.out_Table.TabIndex = 13;
             this.out_Table.UseCompatibleStateImageBehavior = false;
             this.out_Table.View = System.Windows.Forms.View.Details;
@@ -289,6 +289,8 @@ namespace MSS_EXAM
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximumSize = new System.Drawing.Size(387, 1000);
+            this.MinimumSize = new System.Drawing.Size(387, 577);
             this.Name = "R2RLadderDAC";
             this.Text = "R/2R Ladder DAC";
             this.groupBox1.ResumeLayout(false);

@@ -37,10 +37,10 @@ namespace MSS_EXAM
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(15, 165);
+            this.button1.Location = new System.Drawing.Point(15, 15);
             this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(366, 61);
+            this.button1.Size = new System.Drawing.Size(341, 61);
             this.button1.TabIndex = 0;
             this.button1.Text = "Quantization and Encoding";
             this.button1.UseVisualStyleBackColor = true;
@@ -48,10 +48,10 @@ namespace MSS_EXAM
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(15, 254);
+            this.button2.Location = new System.Drawing.Point(15, 104);
             this.button2.Margin = new System.Windows.Forms.Padding(6);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(366, 61);
+            this.button2.Size = new System.Drawing.Size(341, 61);
             this.button2.TabIndex = 1;
             this.button2.Text = "Binary Weighted DAC";
             this.button2.UseVisualStyleBackColor = true;
@@ -59,10 +59,10 @@ namespace MSS_EXAM
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(15, 341);
+            this.button3.Location = new System.Drawing.Point(15, 191);
             this.button3.Margin = new System.Windows.Forms.Padding(6);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(366, 61);
+            this.button3.Size = new System.Drawing.Size(341, 61);
             this.button3.TabIndex = 2;
             this.button3.Text = "R/2R Ladder DAC";
             this.button3.UseVisualStyleBackColor = true;
@@ -70,19 +70,20 @@ namespace MSS_EXAM
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(15, 429);
+            this.button4.Location = new System.Drawing.Point(15, 279);
             this.button4.Margin = new System.Windows.Forms.Padding(6);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(366, 61);
+            this.button4.Size = new System.Drawing.Size(341, 61);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Quantization and Encoding";
+            this.button4.Text = "SAR DAC";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(396, 520);
+            this.ClientSize = new System.Drawing.Size(371, 361);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -90,6 +91,8 @@ namespace MSS_EXAM
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
+            this.MaximumSize = new System.Drawing.Size(387, 400);
+            this.MinimumSize = new System.Drawing.Size(387, 400);
             this.Name = "Form1";
             this.Text = "Fundamentals of Mixed Signals and Sensors";
             this.ResumeLayout(false);

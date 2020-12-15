@@ -87,6 +87,12 @@
     <Compile Include="R2RLadderDAC.Designer.cs">
       <DependentUpon>R2RLadderDAC.cs</DependentUpon>
     </Compile>
+    <Compile Include="SARDAC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SARDAC.Designer.cs">
+      <DependentUpon>SARDAC.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="BinaryWeightedDAC.resx">
       <DependentUpon>BinaryWeightedDAC.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,6 +113,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="R2RLadderDAC.resx">
       <DependentUpon>R2RLadderDAC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SARDAC.resx">
+      <DependentUpon>SARDAC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -30,12 +30,15 @@ namespace MSS_EXAM
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.out_AnalogValue = new System.Windows.Forms.TextBox();
             this.out_Table = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.out_AnalogValue = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.in_DigitalValue = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.in_Rf = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Calculate = new System.Windows.Forms.Button();
@@ -44,15 +47,12 @@ namespace MSS_EXAM
             this.in_NumOfBits = new System.Windows.Forms.NumericUpDown();
             this.in_Vref = new System.Windows.Forms.NumericUpDown();
             this.in_R = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.in_Rf = new System.Windows.Forms.NumericUpDown();
-            this.in_DigitalValue = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.in_Rf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_NumOfBits)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_Vref)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_R)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_Rf)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox2
@@ -70,28 +70,6 @@ namespace MSS_EXAM
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Output";
             // 
-            // label7
-            // 
-            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label7.Location = new System.Drawing.Point(8, 317);
-            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(114, 27);
-            this.label7.TabIndex = 11;
-            this.label7.Text = "Analog Value:";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // out_AnalogValue
-            // 
-            this.out_AnalogValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.out_AnalogValue.Cursor = System.Windows.Forms.Cursors.Default;
-            this.out_AnalogValue.Location = new System.Drawing.Point(130, 317);
-            this.out_AnalogValue.Name = "out_AnalogValue";
-            this.out_AnalogValue.ReadOnly = true;
-            this.out_AnalogValue.Size = new System.Drawing.Size(215, 26);
-            this.out_AnalogValue.TabIndex = 12;
-            this.out_AnalogValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // out_Table
             // 
             this.out_Table.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -102,7 +80,7 @@ namespace MSS_EXAM
             this.out_Table.HideSelection = false;
             this.out_Table.Location = new System.Drawing.Point(6, 25);
             this.out_Table.Name = "out_Table";
-            this.out_Table.Size = new System.Drawing.Size(339, 283);
+            this.out_Table.Size = new System.Drawing.Size(339, 289);
             this.out_Table.TabIndex = 13;
             this.out_Table.UseCompatibleStateImageBehavior = false;
             this.out_Table.View = System.Windows.Forms.View.Details;
@@ -117,6 +95,28 @@ namespace MSS_EXAM
             this.columnHeader2.Text = "Analog";
             this.columnHeader2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader2.Width = 240;
+            // 
+            // out_AnalogValue
+            // 
+            this.out_AnalogValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.out_AnalogValue.Cursor = System.Windows.Forms.Cursors.Default;
+            this.out_AnalogValue.Location = new System.Drawing.Point(130, 317);
+            this.out_AnalogValue.Name = "out_AnalogValue";
+            this.out_AnalogValue.ReadOnly = true;
+            this.out_AnalogValue.Size = new System.Drawing.Size(215, 26);
+            this.out_AnalogValue.TabIndex = 12;
+            this.out_AnalogValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label7.Location = new System.Drawing.Point(8, 317);
+            this.label7.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(114, 27);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Analog Value:";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // groupBox1
             // 
@@ -139,6 +139,40 @@ namespace MSS_EXAM
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Input";
+            // 
+            // in_DigitalValue
+            // 
+            this.in_DigitalValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.in_DigitalValue.Location = new System.Drawing.Point(143, 132);
+            this.in_DigitalValue.Name = "in_DigitalValue";
+            this.in_DigitalValue.Size = new System.Drawing.Size(106, 24);
+            this.in_DigitalValue.TabIndex = 12;
+            this.in_DigitalValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(7, 75);
+            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(129, 27);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Rf (Ohms):";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // in_Rf
+            // 
+            this.in_Rf.DecimalPlaces = 3;
+            this.in_Rf.Location = new System.Drawing.Point(143, 77);
+            this.in_Rf.Margin = new System.Windows.Forms.Padding(2);
+            this.in_Rf.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.in_Rf.Name = "in_Rf";
+            this.in_Rf.Size = new System.Drawing.Size(106, 26);
+            this.in_Rf.TabIndex = 11;
+            this.in_Rf.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label5
             // 
@@ -246,40 +280,6 @@ namespace MSS_EXAM
             this.in_R.TabIndex = 4;
             this.in_R.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // label4
-            // 
-            this.label4.Location = new System.Drawing.Point(7, 75);
-            this.label4.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 27);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Rf (Ohms):";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // in_Rf
-            // 
-            this.in_Rf.DecimalPlaces = 3;
-            this.in_Rf.Location = new System.Drawing.Point(143, 77);
-            this.in_Rf.Margin = new System.Windows.Forms.Padding(2);
-            this.in_Rf.Maximum = new decimal(new int[] {
-            100000,
-            0,
-            0,
-            0});
-            this.in_Rf.Name = "in_Rf";
-            this.in_Rf.Size = new System.Drawing.Size(106, 26);
-            this.in_Rf.TabIndex = 11;
-            this.in_Rf.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // in_DigitalValue
-            // 
-            this.in_DigitalValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.in_DigitalValue.Location = new System.Drawing.Point(143, 132);
-            this.in_DigitalValue.Name = "in_DigitalValue";
-            this.in_DigitalValue.Size = new System.Drawing.Size(106, 24);
-            this.in_DigitalValue.TabIndex = 12;
-            this.in_DigitalValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // BinaryWeightedDAC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -297,10 +297,10 @@ namespace MSS_EXAM
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.in_Rf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_NumOfBits)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_Vref)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_R)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.in_Rf)).EndInit();
             this.ResumeLayout(false);
 
         }

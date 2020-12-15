@@ -5,13 +5,13 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MSS EXAM")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("Fundamentals of Mixed Signals and Sensors - Endterm Exam")]
+[assembly: AssemblyDescription("https://github.com/CpE-Projects-USLS/Fundamentals-of-Mixed-Signals-and-Sensors-Exam")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("JKLorenz0")]
 [assembly: AssemblyProduct("MSS EXAM")]
 [assembly: AssemblyCopyright("Copyright ©  2020")]
-[assembly: AssemblyTrademark("")]
+[assembly: AssemblyTrademark("JKLorenz0")]
 [assembly: AssemblyCulture("")]
 
 // Setting ComVisible to false makes the types in this assembly not visible
