@@ -38,7 +38,7 @@ namespace MSS_EXAM
             out_Levels.Text = levels.ToString();
 
             // Step Size
-            double step_size = (v_max - v_min) / levels;
+            double step_size = Math.Round((v_max - v_min) / levels, 3);
             out_StepSize.Text = step_size.ToString();
 
             // Table
