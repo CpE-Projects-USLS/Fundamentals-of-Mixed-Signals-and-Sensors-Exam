@@ -40,6 +40,8 @@ namespace MSS_EXAM
             this.in_SampledValue = new System.Windows.Forms.NumericUpDown();
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.out_Levels = new System.Windows.Forms.TextBox();
             this.out_QuantizedValue = new System.Windows.Forms.TextBox();
             this.out_DigitalValue = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -50,8 +52,6 @@ namespace MSS_EXAM
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.out_Levels = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.in_Vmin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_Vmax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_NumOfBits)).BeginInit();
@@ -62,20 +62,20 @@ namespace MSS_EXAM
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(7, 21);
+            this.label1.Location = new System.Drawing.Point(3, 21);
             this.label1.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(116, 27);
+            this.label1.Size = new System.Drawing.Size(133, 27);
             this.label1.TabIndex = 0;
             this.label1.Text = "Vmin:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(7, 48);
+            this.label2.Location = new System.Drawing.Point(7, 49);
             this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(116, 27);
+            this.label2.Size = new System.Drawing.Size(130, 27);
             this.label2.TabIndex = 1;
             this.label2.Text = "Vmax:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -85,7 +85,7 @@ namespace MSS_EXAM
             this.label3.Location = new System.Drawing.Point(7, 76);
             this.label3.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(116, 27);
+            this.label3.Size = new System.Drawing.Size(129, 27);
             this.label3.TabIndex = 2;
             this.label3.Text = "Num. of Bits:";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -135,7 +135,7 @@ namespace MSS_EXAM
             this.in_NumOfBits.Location = new System.Drawing.Point(143, 77);
             this.in_NumOfBits.Margin = new System.Windows.Forms.Padding(2);
             this.in_NumOfBits.Maximum = new decimal(new int[] {
-            128,
+            8,
             0,
             0,
             0});
@@ -176,7 +176,7 @@ namespace MSS_EXAM
             this.groupBox1.Controls.Add(this.in_NumOfBits);
             this.groupBox1.Controls.Add(this.in_Vmin);
             this.groupBox1.Controls.Add(this.in_Vmax);
-            this.groupBox1.Location = new System.Drawing.Point(11, 10);
+            this.groupBox1.Location = new System.Drawing.Point(11, 11);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
@@ -207,10 +207,10 @@ namespace MSS_EXAM
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(7, 103);
+            this.label5.Location = new System.Drawing.Point(3, 103);
             this.label5.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(129, 27);
+            this.label5.Size = new System.Drawing.Size(133, 27);
             this.label5.TabIndex = 8;
             this.label5.Text = "Sampled Value:";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -229,12 +229,32 @@ namespace MSS_EXAM
             this.groupBox2.Controls.Add(this.out_StepSize);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.out_Table);
-            this.groupBox2.Location = new System.Drawing.Point(11, 151);
+            this.groupBox2.Location = new System.Drawing.Point(12, 152);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(351, 375);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Output";
+            // 
+            // label8
+            // 
+            this.label8.Location = new System.Drawing.Point(8, 33);
+            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 27);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Levels:";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // out_Levels
+            // 
+            this.out_Levels.Cursor = System.Windows.Forms.Cursors.Default;
+            this.out_Levels.Location = new System.Drawing.Point(88, 33);
+            this.out_Levels.Name = "out_Levels";
+            this.out_Levels.ReadOnly = true;
+            this.out_Levels.Size = new System.Drawing.Size(48, 26);
+            this.out_Levels.TabIndex = 15;
+            this.out_Levels.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // out_QuantizedValue
             // 
@@ -334,26 +354,6 @@ namespace MSS_EXAM
             this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader3.Width = 170;
             // 
-            // out_Levels
-            // 
-            this.out_Levels.Cursor = System.Windows.Forms.Cursors.Default;
-            this.out_Levels.Location = new System.Drawing.Point(88, 33);
-            this.out_Levels.Name = "out_Levels";
-            this.out_Levels.ReadOnly = true;
-            this.out_Levels.Size = new System.Drawing.Size(48, 26);
-            this.out_Levels.TabIndex = 15;
-            this.out_Levels.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label8
-            // 
-            this.label8.Location = new System.Drawing.Point(8, 33);
-            this.label8.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 27);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Levels:";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // QuantizationAndEncoding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
@@ -363,6 +363,7 @@ namespace MSS_EXAM
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(5);
+            this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(387, 1000);
             this.MinimumSize = new System.Drawing.Size(387, 577);
             this.Name = "QuantizationAndEncoding";

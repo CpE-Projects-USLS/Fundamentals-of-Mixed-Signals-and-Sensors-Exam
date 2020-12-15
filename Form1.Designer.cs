@@ -38,7 +38,7 @@ namespace MSS_EXAM
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(15, 165);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.button1.Margin = new System.Windows.Forms.Padding(6);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(366, 61);
             this.button1.TabIndex = 0;
@@ -53,8 +53,9 @@ namespace MSS_EXAM
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(366, 61);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Quantization and Encoding";
+            this.button2.Text = "Binary Weighted DAC";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -86,9 +87,10 @@ namespace MSS_EXAM
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Fundamentals of Mixed Signals and Sensors";
             this.ResumeLayout(false);
 
         }

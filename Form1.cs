@@ -22,5 +22,11 @@ namespace MSS_EXAM
             QuantizationAndEncoding form = new QuantizationAndEncoding();
             form.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BinaryWeightedDAC form = new BinaryWeightedDAC();
+            form.Show();
+        }
     }
 }
