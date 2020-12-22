@@ -37,7 +37,7 @@ namespace MSS_EXAM
 
         private void button4_Click(object sender, EventArgs e)
         {
-            SARDAC form = new SARDAC();
+            SARADC form = new SARADC();
             form.Show();
         }
     }

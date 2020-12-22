@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace MSS_EXAM
 {
-    public partial class SARDAC : Form
+    public partial class SARADC : Form
     {
         public class TableItem
         {
@@ -20,7 +20,7 @@ namespace MSS_EXAM
             public double position;
         }
 
-        public SARDAC()
+        public SARADC()
         {
             InitializeComponent();
         }

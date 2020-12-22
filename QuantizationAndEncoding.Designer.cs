@@ -329,6 +329,7 @@ namespace MSS_EXAM
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
+            this.out_Table.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.out_Table.HideSelection = false;
             this.out_Table.Location = new System.Drawing.Point(9, 73);
             this.out_Table.Name = "out_Table";

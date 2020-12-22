@@ -87,11 +87,11 @@
     <Compile Include="R2RLadderDAC.Designer.cs">
       <DependentUpon>R2RLadderDAC.cs</DependentUpon>
     </Compile>
-    <Compile Include="SARDAC.cs">
+    <Compile Include="SARADC.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="SARDAC.Designer.cs">
-      <DependentUpon>SARDAC.cs</DependentUpon>
+    <Compile Include="SARADC.Designer.cs">
+      <DependentUpon>SARADC.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="BinaryWeightedDAC.resx">
       <DependentUpon>BinaryWeightedDAC.cs</DependentUpon>
@@ -107,6 +107,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="QuantizationAndEncoding.resx">
       <DependentUpon>QuantizationAndEncoding.cs</DependentUpon>
@@ -114,8 +115,8 @@
     <EmbeddedResource Include="R2RLadderDAC.resx">
       <DependentUpon>R2RLadderDAC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SARDAC.resx">
-      <DependentUpon>SARDAC.cs</DependentUpon>
+    <EmbeddedResource Include="SARADC.resx">
+      <DependentUpon>SARADC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -141,6 +142,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

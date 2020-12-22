@@ -1,7 +1,7 @@
 ﻿
 namespace MSS_EXAM
 {
-    partial class SARDAC
+    partial class SARADC
     {
         /// <summary>
         /// Required designer variable.
@@ -32,12 +32,16 @@ namespace MSS_EXAM
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Calculate = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.in_NumOfBits = new System.Windows.Forms.NumericUpDown();
             this.in_Vref = new System.Windows.Forms.NumericUpDown();
             this.in_AnalogValue = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.out_Process = new System.Windows.Forms.ListView();
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label8 = new System.Windows.Forms.Label();
             this.out_Levels = new System.Windows.Forms.TextBox();
             this.out_BinaryValue = new System.Windows.Forms.TextBox();
@@ -48,10 +52,6 @@ namespace MSS_EXAM
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.out_Process = new System.Windows.Forms.ListView();
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.in_NumOfBits)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_Vref)).BeginInit();
@@ -61,6 +61,8 @@ namespace MSS_EXAM
             // 
             // groupBox1
             // 
+            this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.btn_Calculate);
             this.groupBox1.Controls.Add(this.label2);
@@ -89,6 +91,7 @@ namespace MSS_EXAM
             // 
             // btn_Calculate
             // 
+            this.btn_Calculate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Calculate.Location = new System.Drawing.Point(254, 22);
             this.btn_Calculate.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Calculate.Name = "btn_Calculate";
@@ -97,6 +100,16 @@ namespace MSS_EXAM
             this.btn_Calculate.Text = "Calculate";
             this.btn_Calculate.UseVisualStyleBackColor = true;
             this.btn_Calculate.Click += new System.EventHandler(this.btn_Calculate_Click);
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(7, 48);
+            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(129, 27);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Analog Value:";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // label3
             // 
@@ -110,6 +123,8 @@ namespace MSS_EXAM
             // 
             // in_NumOfBits
             // 
+            this.in_NumOfBits.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.in_NumOfBits.Location = new System.Drawing.Point(143, 78);
             this.in_NumOfBits.Margin = new System.Windows.Forms.Padding(2);
             this.in_NumOfBits.Maximum = new decimal(new int[] {
@@ -134,6 +149,8 @@ namespace MSS_EXAM
             // 
             // in_Vref
             // 
+            this.in_Vref.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.in_Vref.DecimalPlaces = 3;
             this.in_Vref.Location = new System.Drawing.Point(143, 22);
             this.in_Vref.Margin = new System.Windows.Forms.Padding(2);
@@ -149,6 +166,8 @@ namespace MSS_EXAM
             // 
             // in_AnalogValue
             // 
+            this.in_AnalogValue.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.in_AnalogValue.DecimalPlaces = 3;
             this.in_AnalogValue.Location = new System.Drawing.Point(143, 50);
             this.in_AnalogValue.Margin = new System.Windows.Forms.Padding(2);
@@ -161,16 +180,6 @@ namespace MSS_EXAM
             this.in_AnalogValue.Size = new System.Drawing.Size(106, 26);
             this.in_AnalogValue.TabIndex = 4;
             this.in_AnalogValue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // label2
-            // 
-            this.label2.Location = new System.Drawing.Point(7, 48);
-            this.label2.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(129, 27);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Analog Value:";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // groupBox2
             // 
@@ -191,6 +200,40 @@ namespace MSS_EXAM
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Output";
+            // 
+            // out_Process
+            // 
+            this.out_Process.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.out_Process.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader7,
+            this.columnHeader8,
+            this.columnHeader9});
+            this.out_Process.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.out_Process.HideSelection = false;
+            this.out_Process.Location = new System.Drawing.Point(9, 244);
+            this.out_Process.Name = "out_Process";
+            this.out_Process.Size = new System.Drawing.Size(339, 107);
+            this.out_Process.TabIndex = 17;
+            this.out_Process.UseCompatibleStateImageBehavior = false;
+            this.out_Process.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Clock";
+            this.columnHeader7.Width = 40;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Condition";
+            this.columnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader8.Width = 80;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Action";
+            this.columnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.columnHeader9.Width = 210;
             // 
             // label8
             // 
@@ -263,6 +306,7 @@ namespace MSS_EXAM
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3});
+            this.out_Table.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.out_Table.HideSelection = false;
             this.out_Table.Location = new System.Drawing.Point(9, 73);
             this.out_Table.Name = "out_Table";
@@ -288,41 +332,7 @@ namespace MSS_EXAM
             this.columnHeader3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.columnHeader3.Width = 170;
             // 
-            // out_Process
-            // 
-            this.out_Process.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.out_Process.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader7,
-            this.columnHeader8,
-            this.columnHeader9});
-            this.out_Process.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.out_Process.HideSelection = false;
-            this.out_Process.Location = new System.Drawing.Point(9, 244);
-            this.out_Process.Name = "out_Process";
-            this.out_Process.Size = new System.Drawing.Size(339, 107);
-            this.out_Process.TabIndex = 17;
-            this.out_Process.UseCompatibleStateImageBehavior = false;
-            this.out_Process.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "Clock";
-            this.columnHeader7.Width = 40;
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Condition";
-            this.columnHeader8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader8.Width = 80;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Action";
-            this.columnHeader9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.columnHeader9.Width = 210;
-            // 
-            // SARDAC
+            // SARADC
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -331,10 +341,9 @@ namespace MSS_EXAM
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.MaximumSize = new System.Drawing.Size(387, 1000);
             this.MinimumSize = new System.Drawing.Size(387, 577);
-            this.Name = "SARDAC";
-            this.Text = "SAR DAC";
+            this.Name = "SARADC";
+            this.Text = "SAR ADC";
             this.groupBox1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.in_NumOfBits)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.in_Vref)).EndInit();
