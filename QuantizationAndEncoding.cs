@@ -44,12 +44,12 @@ namespace MSS_EXAM
             // Table
             out_Table.Items.Clear();
             TableItem closestItem = new TableItem();
-            for (int level = 0; level <= levels; level++)
+            for (int level = 0; level < levels; level++)
             {
-                // Format Binary string
-                string binary = level == 0 ? " " : Convert.ToString(level - 1, 2);
+                // Add leading zeroes to represent an n bit binary
+                string binary = Convert.ToString(level, 2);
                 for (int length = binary.Length; length < num_of_bits; length++)
-                    binary = (level == 0 ? " " : "0") + binary;
+                    binary = "0" + binary;
 
                 // Create object
                 TableItem this_item = new TableItem();
